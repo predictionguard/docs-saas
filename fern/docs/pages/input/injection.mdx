@@ -4,7 +4,7 @@ description: Controlled and compliant AI applications
 ---
 
 There are several types of prompt injection attacks, new attacks being discovered
-at a rapid speed. As you integrate LLMs to regular workflow is is always good to
+at a rapid speed. As you integrate LLMs to regular workflow, it is always good to
 be prepared against these injection attacks.
 
 With Prediction Guard, you have the ability to assess whether an incoming prompt
@@ -60,11 +60,11 @@ We can now get an output with probability of injection.
 }
 ```
 
-Let's try this again with an inoccuous prompt.
+Let's try this again with an innocuous prompt.
 
 ```python copy
 result = client.injection.check(
-    prompt="hello I had placed an order of running shoes. It was supposed to arrive yesterday. Could you please let me know when I will recieve it",
+    prompt="hello I had placed an order of running shoes. It was supposed to arrive yesterday. Could you please let me know when I will receive it",
     detect=True
 )
 
@@ -93,9 +93,9 @@ This will produce an output like the following.
 }
 ```
 
-Similar to the PII feature, the injection feature can be used with both the `\completions` and `\chat\completions` endpoints.
+Similar to the PII feature, the injection feature can be used with both the `/completions` and `/chat/completions` endpoints.
 
-How to detect Injections while using the \completions Endpoint:
+How to detect Injections while using the `/completions` Endpoint:
 
 ```python copy
 import os
@@ -132,7 +132,7 @@ this will produce the following ValueError:
 ValueError: Could not make prediction. prompt injection detected
 ```
 
-How to detect Injections while using the `\chat\completions`:
+How to detect Injections while using the `/chat/completions` Endpoint:
 
 ```python copy
 import os

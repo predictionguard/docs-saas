@@ -70,7 +70,7 @@ print(json.dumps(
 ))
 ```
 
-The processed prompt will then be.
+The processed prompt will then be:
 
 ```json copy
 {
@@ -114,7 +114,7 @@ response = client.completions.create(
 print(json.dumps(response, sort_keys=True, indent=4, separators=(',', ': ')))
 ```
 
-In the response, you can see the PII has been replced and the LLM response is for
+In the response, you can see the PII has been replaced and the LLM response is for
 the modified prompt.
 
 ```json copy
