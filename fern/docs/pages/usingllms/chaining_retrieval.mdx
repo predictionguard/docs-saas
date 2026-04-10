@@ -29,7 +29,7 @@ We will use Python to show an example:
 ## Dependencies and Imports
 
 You will need to install Prediction Guard, LangChain, LanceDB and a few more
-dependencies in you Python environment.
+dependencies in your Python environment.
 
 ```bash copy
 $ pip install langchain predictionguard lancedb html2text sentence-transformers
@@ -77,7 +77,7 @@ possible, and complicated instructions don't do that.
 template = """### Instruction:
 Decide if the following input message is an informational question, a general chat message, or a request for code generation.
 If the message is an informational question, answer it based on the informational context provided below.
-If the message is a general chat message, respond in a kind and friendly manner based on the coversation context provided below.
+If the message is a general chat message, respond in a kind and friendly manner based on the conversation context provided below.
 If the message is a request for code generation, respond with a code snippet.
 
 ### Input:
@@ -88,7 +88,7 @@ Informational Context: The Greater Los Angeles and San Francisco Bay areas in Ca
 Conversational Context:
 Human - "Hello, how are you?"
 AI - "I'm good, what can I help you with?"
-Human - "What is the captital of California?"
+Human - "What is the capital of California?"
 AI - "Sacramento"
 Human - "Thanks!"
 AI - "You are welcome!"
@@ -118,7 +118,7 @@ The population of LA is approximately 3.9 million people.
 
 Rather than try to handle everything in one call to the LLM, let's decompose our
 logic into multiple calls that are each simple. We will also add in some non-LLM
-logic The chain of processing is:
+logic. The chain of processing is:
 
 - Prompt 1 - Determine if the message is a request for code generation.
 - Prompt 2 - Q&A prompt to answer based on informational context
@@ -282,7 +282,7 @@ info_context = "The Greater Los Angeles and San Francisco Bay areas in Californi
 
 convo_context = """Human: Hello, how are you?
 AI: I'm good, what can I help you with?
-Human: What is the captital of California?
+Human: What is the capital of California?
 AI: Sacramento
 Human: Thanks!
 AI: You are welcome!"""
@@ -352,7 +352,7 @@ probabilities and based on its training data.
 Gift cards are delivered via US Mail.
 ```
 
-## Retrieval Augmentated Generation (RAG)
+## Retrieval-Augmented Generation (RAG)
 
 ![Retrieval augmented generation](rag.png)
 
