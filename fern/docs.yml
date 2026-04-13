@@ -92,6 +92,8 @@ navigation:
             path: ./docs/pages/deployment/api-keys.mdx
           - page: Security & Monitoring
             path: ./docs/pages/deployment/security-monitoring.mdx
+          - page: Monitoring
+            path: ./docs/pages/deployment/monitoring.mdx
   - tab: development
     layout:
       - section: Getting Started
