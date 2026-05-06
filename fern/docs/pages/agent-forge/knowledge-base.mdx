@@ -33,7 +33,7 @@ Navigate to the Knowledge section from the left sidebar or top navigation.
 
 The Knowledge Base interface provides:
 - **Tabs**: Switch between Agents and Knowledge sections
-- **Knowledge Base List**: View all your organization's knowledge bases
+- **Knowledge Base List**: View knowledge bases you have created
 - **Create Button**: Create new knowledge bases
 - **Search**: Find specific knowledge bases
 
@@ -928,10 +928,10 @@ Knowledge bases use vector databases (e.g., FAISS, Pinecone, Milvus) to:
 
 ### Access Control
 
-Currently, knowledge bases are organization-wide resources:
-- Any agent creator can attach any KB
+Knowledge bases are scoped to the user who created them:
+- Only the creator of a knowledge base can attach it to their agents
 - Users chatting with agents see information from attached KBs
-- Plan knowledge base scope accordingly
+- Public agents can use a knowledge base configured by their creator
 
 **Best Practices**:
 - Create separate KBs for different sensitivity levels
