@@ -1,5 +1,6 @@
 instances:
   - url: pg-guard.docs.buildwithfern.com
+    custom-domain: docs.predictionguard.com
 
 settings:
   http-snippets: false
