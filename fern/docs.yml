@@ -10,22 +10,9 @@ tabs:
   home:
     display-name: Home
     icon: home
-  deployment:
-    display-name: Administration & Governance
-    slug: admin
-    icon: server
-  development:
-    display-name: Development and Integration
-    icon: book
-  agent-forge:
-    display-name: Agent Forge
-    icon: fa-solid fa-wand-magic-sparkles
   api:
     display-name: API Reference
     icon: puzzle
-  sdk:
-    display-name: SDK Docs
-    icon: fa-brands fa-codepen
 
 navigation:
   - tab: home
@@ -34,174 +21,114 @@ navigation:
         contents:
           - page: Welcome
             path: ./docs/pages/welcome.mdx
-          - page: Security
-            path: ./docs/pages/security.mdx
-      - section: Agent Forge
-        contents:
-          - page: Overview
-            path: ./docs/pages/agent-forge/overview.mdx
-          - page: Getting Started
-            path: ./docs/pages/agent-forge/getting-started.mdx
-          - page: Chatting with Agents
-            path: ./docs/pages/agent-forge/chatting.mdx
-          - page: Building Agents
-            path: ./docs/pages/agent-forge/building-agents.mdx
-          - page: Knowledge Base
-            path: ./docs/pages/agent-forge/knowledge-base.mdx
-          - page: MCP Integration
-            path: ./docs/pages/agent-forge/mcp.mdx
-  - tab: deployment
-    layout:
-      - section: Getting Started
-        contents:
-          - page: Quick Start
-            path: ./docs/pages/deployment/overview.mdx
-      - section: Installation
-        contents:
-          - section: Cloud
-            contents:
-              - page: GCP
-                path: ./docs/pages/deployment/gcp.mdx
-              - page: Azure
-                path: ./docs/pages/deployment/azure.mdx
-              - page: AWS
-                path: ./docs/pages/deployment/aws.mdx
-          - section: Air Gapped
-            contents:
-              - page: Air Gapped
-                path: ./docs/pages/deployment/air-gapped.mdx
-          - section: On-Premises
-            contents:
-              - page: Kubernetes
-                path: ./docs/pages/deployment/kubernetes.mdx
-              - page: Zero Dependency Binary
-                path: ./docs/pages/deployment/binary.mdx
-      - section: Administration
-        contents:
-          - page: Admin Console
-            path: ./docs/pages/deployment/admin-panel.mdx
-          - page: Create an AI System
-            path: ./docs/pages/deployment/custom_system.mdx
-          - page: AI System Management
-            path: ./docs/pages/deployment/cluster-management.mdx
-
-          - page: Model Management
-            path: ./docs/pages/deployment/model-management.mdx
-          - page: API Keys
-            path: ./docs/pages/deployment/api-keys.mdx
-          - page: Monitoring
-            path: ./docs/pages/deployment/monitoring.mdx
-  - tab: development
-    layout:
-      - section: Getting Started
-        contents:
-          - page: Quick Start
-            path: ./docs/pages/quick_start.mdx
-      - section: Available Models
-        contents:
-          - page: LLMs
-            path: ./docs/pages/options/llms.mdx
-          - page: LVMs
-            path: ./docs/pages/options/lvms.mdx
-          - page: Embedding Models
-            path: ./docs/pages/options/embedding_models.mdx
-          - page: Audio Models
-            path: ./docs/pages/options/audio_models.mdx
-          - page: Reranker Models
-            path: ./docs/pages/options/reranker_models.mdx
-          - page: Model Enumerations
-            path: ./docs/pages/options/enumerations.mdx
-          - page: Prompt Formatting
-            path: ./docs/pages/options/prompts.mdx
-      - section: Using LLMs
-        contents:
-          - page: Accessing LLMs
-            path: ./docs/pages/usingllms/accessing_llms.mdx
-          - page: Basic Prompting
-            path: ./docs/pages/usingllms/basic_prompting.mdx
-          - page: Prompt Engineering
-            path: ./docs/pages/usingllms/prompt_engineering.mdx
-          - page: Chat Completions
-            path: ./docs/pages/usingllms/chat_completions.mdx
-          - page: Chaining and Retrieval
-            path: ./docs/pages/usingllms/chaining_retrieval.mdx
-          - page: Tool Calling
-            path: ./docs/pages/usingllms/tool_calling.mdx
-          - page: Agents
-            path: ./docs/pages/usingllms/agents.mdx
-          - page: Streaming
-            path: ./docs/pages/usingllms/streaming.mdx
-          - page: Chat Vision
-            path: ./docs/pages/usingllms/chat_vision.mdx
-          - page: Embeddings
-            path: ./docs/pages/usingllms/embeddings.mdx
-      - section: Secure and Filter Inputs
-        contents:
-          - page: PII Detection
-            path: ./docs/pages/input/PII.mdx
-          - page: Injection Prevention
-            path: ./docs/pages/input/injection.mdx
-      - section: Secure and Filter Outputs
-        contents:
-          - page: Factuality Checks
-            path: ./docs/pages/output/factuality.mdx
-          - page: Toxicity Detection
-            path: ./docs/pages/output/toxicity.mdx
-      - section: Integration Examples
-        contents:
-          - page: Custom Output Structuring
-            path: ./docs/pages/guides/output.mdx
-          - page: Data Chat with LLMs
-            path: ./docs/pages/guides/ada.mdx
-          - page: Data Extraction + Factuality
-            path: ./docs/pages/guides/data-extraction.mdx
-          - page: LangChain Integration
-            path: ./docs/pages/guides/langchainllm.mdx
-          - page: Code Assistant
-            path: ./docs/pages/guides/code-assistant.mdx
-      - section: Support
-        contents:
-          - page: Contact Us
-            path: ./docs/pages/support.mdx
-  - tab: agent-forge
-    layout:
-      - section: Getting Started
-        contents:
-          - page: Overview
-            path: ./docs/pages/agent-forge/overview.mdx
-          - page: Getting Started
-            path: ./docs/pages/agent-forge/getting-started.mdx
-      - section: Using Agent Forge
-        contents:
-          - page: Chatting with Agents
-            path: ./docs/pages/agent-forge/chatting.mdx
-          - page: Building Agents
-            path: ./docs/pages/agent-forge/building-agents.mdx
-          - page: Knowledge Base
-            path: ./docs/pages/agent-forge/knowledge-base.mdx
-          - page: MCP Integration
-            path: ./docs/pages/agent-forge/mcp.mdx
   - tab: api
     layout:
       - api: API Reference
         display-errors: true
-      - section: Valid Inputs
-        contents:
-          - page: Enumerations for API
-            path: ./docs/pages/options/enumerations.mdx
-
-  - tab: sdk
-    layout:
-      - section: Software Development Kits
-        contents:
-          - page: SDKs
-            path: ./docs/pages/sdks.mdx
-          - page: Quick Start
-            path: ./docs/pages/sdkquickstart.mdx
 
 redirects:
+  - source: "/admin/administration/admin-console"
+    destination: "/"
+  - source: "/admin/administration/ai-system-management"
+    destination: "/"
+  - source: "/admin/administration/api-keys"
+    destination: "/"
+  - source: "/admin/administration/create-an-ai-system"
+    destination: "/"
+  - source: "/admin/administration/model-management"
+    destination: "/"
+  - source: "/admin/administration/monitoring"
+    destination: "/"
+  - source: "/admin/getting-started/quick-start"
+    destination: "/"
+  - source: "/admin/installation/air-gapped/air-gapped"
+    destination: "/"
+  - source: "/admin/installation/cloud/aws"
+    destination: "/"
+  - source: "/admin/installation/cloud/azure"
+    destination: "/"
+  - source: "/admin/installation/cloud/gcp"
+    destination: "/"
+  - source: "/admin/installation/on-premises/binary"
+    destination: "/"
+  - source: "/admin/installation/on-premises/kubernetes"
+    destination: "/"
+  - source: "/development-and-integration/getting-started/quick-start"
+    destination: "/"
+  - source: "/development-and-integration/integration-examples/code-assistant"
+    destination: "/"
+  - source: "/development-and-integration/integration-examples/custom-output-structuring"
+    destination: "/"
+  - source: "/development-and-integration/integration-examples/data-chat-with-ll-ms"
+    destination: "/"
+  - source: "/development-and-integration/integration-examples/data-extraction-factuality"
+    destination: "/"
+  - source: "/development-and-integration/integration-examples/lang-chain-integration"
+    destination: "/"
+  - source: "/development-and-integration/secure-and-filter-inputs/injection-prevention"
+    destination: "/"
+  - source: "/development-and-integration/secure-and-filter-inputs/pii-detection"
+    destination: "/"
+  - source: "/development-and-integration/secure-and-filter-outputs/factuality-checks"
+    destination: "/"
+  - source: "/development-and-integration/secure-and-filter-outputs/toxicity-detection"
+    destination: "/"
+  - source: "/development-and-integration/support/contact-us"
+    destination: "/"
+  - source: "/home/agent-forge/building-agents"
+    destination: "/"
+  - source: "/home/agent-forge/chatting-with-agents"
+    destination: "/"
+  - source: "/home/agent-forge/getting-started"
+    destination: "/"
+  - source: "/home/agent-forge/knowledge-base"
+    destination: "/"
+  - source: "/home/agent-forge/mcp-integration"
+    destination: "/"
+  - source: "/home/agent-forge/overview"
+    destination: "/"
+  - source: "/home/getting-started/security"
+    destination: "/"
+  - source: "/options/audio_models"
+    destination: "/"
+  - source: "/options/embeddings_models"
+    destination: "/"
+  - source: "/options/enumerations"
+    destination: "/"
+  - source: "/options/llms"
+    destination: "/"
+  - source: "/options/lvms"
+    destination: "/"
   - source: "/options/models"
-    destination: "/options/llms"
+    destination: "/"
+  - source: "/options/prompts"
+    destination: "/"
+  - source: "/options/reranker_models"
+    destination: "/"
+  - source: "/sdk-docs/software-development-kits/quick-start"
+    destination: "/"
+  - source: "/sdk-docs/software-development-kits/sd-ks"
+    destination: "/"
+  - source: "/usingllms/accessing"
+    destination: "/"
+  - source: "/usingllms/agents"
+    destination: "/"
+  - source: "/usingllms/augmentation"
+    destination: "/"
+  - source: "/usingllms/chat"
+    destination: "/"
+  - source: "/usingllms/embeddings"
+    destination: "/"
+  - source: "/usingllms/engineering"
+    destination: "/"
+  - source: "/usingllms/prompting"
+    destination: "/"
+  - source: "/usingllms/streaming"
+    destination: "/"
+  - source: "/usingllms/tooling"
+    destination: "/"
+  - source: "/usingllms/vision"
+    destination: "/"
 
 navbar-links:
   - type: secondary

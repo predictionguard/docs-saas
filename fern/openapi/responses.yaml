@@ -212,9 +212,6 @@ paths:
                       items:
                         - type: string
                           description: An entity type that the PII check should ignore.
-                    factuality:
-                      type: boolean
-                      description: Set to true to turn on factuality processing.
                     toxicity:
                       type: boolean
                       description: Set to true to turn on toxicity processing.
@@ -226,7 +223,6 @@ paths:
                   safeguards:
                     pii: "replace"
                     pii_replace_method: "random"
-                    factuality: true
                     toxicity: true
               #              Streaming:
               #                value:
@@ -255,7 +251,6 @@ paths:
                   safeguards:
                     pii: "replace"
                     pii_replace_method: "random"
-                    factuality: true
                     toxicity: true
               MCP Call:
                 value:
@@ -302,7 +297,6 @@ paths:
                   safeguards:
                     pii: "replace"
                     pii_replace_method: "random"
-                    factuality: true
                     toxicity: true
       responses:
         "403":

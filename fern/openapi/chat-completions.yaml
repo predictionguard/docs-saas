@@ -158,9 +158,6 @@ paths:
                   type: object
                   description: Options to affect the output of the response.
                   properties:
-                    factuality:
-                      type: boolean
-                      description: Set to true to turn on factuality processing.
                     toxicity:
                       type: boolean
                       description: Set to true to turn on toxicity processing.
@@ -205,7 +202,6 @@ paths:
                   top_p: 1.0
                   top_k: 50
                   output:
-                    factuality: true
                     toxicity: true
                   input:
                     pii: "replace"
@@ -254,7 +250,6 @@ paths:
                   top_p: 1.0
                   top_k: 50
                   output:
-                    factuality: true
                     toxicity: true
                   input:
                     pii: "replace"
@@ -297,7 +292,6 @@ paths:
                   top_p: 1.0
                   top_k: 50
                   output:
-                    factuality: true
                     toxicity: true
                   input:
                     pii: "replace"
