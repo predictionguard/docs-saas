@@ -11,7 +11,7 @@ groups:
 api:
   specs:
     - openapi: openapi/responses.yaml
-      settings: &shared-settings
+      settings: &ref_0
         title-as-schema-name: true
         type-dates-as-strings: true
         object-query-parameters: false
@@ -21,23 +21,24 @@ api:
         coerce-optional-schemas-to-nullable: true
         inline-path-parameters: false
         coerce-enums-to-literals: true
+        disambiguate-request-names: false
     - openapi: openapi/chat-completions.yaml
-      settings: *shared-settings
+      settings: *ref_0
     - openapi: openapi/completions.yaml
-      settings: *shared-settings
+      settings: *ref_0
     - openapi: openapi/embeddings.yaml
-      settings: *shared-settings
+      settings: *ref_0
     - openapi: openapi/audio.yaml
-      settings: *shared-settings
+      settings: *ref_0
     - openapi: openapi/documents.yaml
-      settings: *shared-settings
+      settings: *ref_0
     - openapi: openapi/rerank.yaml
-      settings: *shared-settings
+      settings: *ref_0
     - openapi: openapi/tokenization.yaml
-      settings: *shared-settings
+      settings: *ref_0
     - openapi: openapi/safety.yaml
-      settings: *shared-settings
+      settings: *ref_0
     - openapi: openapi/models.yaml
-      settings: *shared-settings
+      settings: *ref_0
     - openapi: openapi/mcp.yaml
-      settings: *shared-settings
+      settings: *ref_0

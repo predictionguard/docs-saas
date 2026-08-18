@@ -1,0 +1,28 @@
+paths:
+  /models/chat-completion:
+    get:
+      x-fern-examples:
+        - path-parameters:
+            capability: chat-completion
+          response:
+            body:
+              object: list
+              data:
+                - id: gpt-oss-120b
+                  object: model
+                  created: 1730332800
+                  owned_by: OpenAI
+                  description: GPT-OSS 120b is an OpenAI model for powerful reasoning, agentic tasks, and high reasoning use cases.
+                  max_context_length: 128000
+                  prompt_format: none
+                  capabilities:
+                    chat_completion: true
+                    chat_with_image: false
+                    completion: true
+                    embedding: false
+                    embedding_with_image: false
+                    tokenize: true
+                    detokenize: true
+                    rerank: false
+                    tool_calling: true
+                    reasoning: true
